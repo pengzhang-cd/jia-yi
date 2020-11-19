@@ -39,7 +39,8 @@ def mail():
         text = '''这是一封来自python自动发送的邮件。
         这是在练习编程发送邮件。
         怎样丰富邮件的文字内容部分。
-        人生苦短，我用python'''
+        人生苦短，我用python
+        测试git 编辑发送add。commit'''
         msg = MIMEText(text,'plain','utf-8')
         msg['From'] = formataddr(["chris zhang",my_sender])  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
         msg['To'] = Header(",".join(my_user))              # 括号里的对应收件人邮箱昵称、收件人邮箱账号
